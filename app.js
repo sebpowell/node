@@ -12,6 +12,16 @@ var LocalStrategy = require('passport-local').Strategy;
 var routes = require('./routes/index');
 // var users = require('./routes/users');
 
+
+
+var vpn = require('./models/vpns');
+var vpns = require('./routes/vpns');
+
+app.use('/vpns', vpns);
+
+
+
+
 var app = express();
 
 // view engine setup

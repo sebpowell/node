@@ -1,9 +1,9 @@
 // Why is the below needed? Can't it come from app.js?
-	var express = require('express'),
-		router = express.Router(),
-		mongoose = require('mongoose'),
-		bodyParser = require('body-parser'), 
-		methodOverride = require('method-override');
+var express = require('express'),
+	router = express.Router(),
+	mongoose = require('mongoose'),
+	bodyParser = require('body-parser'), 
+	methodOverride = require('method-override');
 
 //Any requests to this controller must pass through this 'use' function
 //Copy and pasted from method-override

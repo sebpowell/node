@@ -1,0 +1,30 @@
+{
+  "name": "barebones",
+  "description": "SASS boilerplate",
+  "main": "",
+  "authors": [
+    "Seb Powell"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sebpowell/barebones",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "0.0.2",
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.2",
+    "commit": "3f596ccf8bcdff92d6d4d3da118cd7c3f54d1433"
+  },
+  "_source": "git://github.com/sebpowell/barebones.git",
+  "_target": "0.0.2",
+  "_originalSource": "barebones",
+  "_direct": true
+}

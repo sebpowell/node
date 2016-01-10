@@ -1,0 +1,15 @@
+extend ../layout
+
+block content
+	.container-small
+			section.margin-bottom-double
+				h1
+					= vpn.name
+				small
+					= vpn._id
+
+
+			form(action='/vpns/#{vpn._id}/edit',method='post',enctype='application/x-www-form-urlencoded')
+				input(type='hidden',value='DELETE',name='_method')
+				button.primary.block.large(type='submit').
+					Delete

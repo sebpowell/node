@@ -1,0 +1,11 @@
+extend ../layout
+
+block content
+	.container-small
+			section.margin-bottom-double
+				h1
+					= vpn.name
+				small
+					= vpn._id
+
+			a.button.block.primary.large(href='/vpns/#{vpn._id}/edit') Edit VPN

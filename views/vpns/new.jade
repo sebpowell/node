@@ -1,0 +1,20 @@
+extends ../layout
+
+
+block content
+		.container-small
+				h1 Add New VPN
+				form(name="addblob",method="post",action="/vpns")
+					.form-spacer
+						input(type="text", placeholder="Name", name="name")
+					.form-spacer
+						input(type="number", placeholder="Price", name="price")
+					.form-spacer
+						label Mac Support?
+						input(type="checkbox", name="mac")
+					.form-spacer
+						label Windows Support?
+						input(type="checkbox", name="windows")
+					.form-spacer
+						input(type="text", placeholder="Website", name="website")
+					button.primary.block.large(type="submit") Create

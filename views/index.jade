@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	.masthead
+		.masthead-content
+			h1 Compare VPNS
+
+
+	.container-large
+		- each vpn in vpns
+			a(href= vpn.name) 
+				= vpn.name

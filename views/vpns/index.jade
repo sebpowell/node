@@ -1,0 +1,32 @@
+extend ../layout
+
+block content
+
+	.container-large
+		h1 Compare VPNS
+		table
+			thead
+				th Name
+				th Price
+				th Mac Support
+				th Windows Support
+			- each vpn in vpns
+				tr
+					td
+						a(href="vpns/" + vpn._id) 
+							= vpn.name
+					td
+						= vpn.price
+					td
+						if vpn.mac == true
+							| Yes
+						else
+							| No
+					td
+						if vpn.windows == true
+							| Yes
+						else
+							| No
+					td
+						a.button.primary(href=vpn.website) Go to Website
+

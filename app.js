@@ -11,18 +11,12 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var routes = require('./routes/index');
 // var users = require('./routes/users');
+var app = express();
 
-
-
-var vpn = require('./models/vpns');
+var vpn = require('./model/vpns');
 var vpns = require('./routes/vpns');
 
 app.use('/vpns', vpns);
-
-
-
-
-var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

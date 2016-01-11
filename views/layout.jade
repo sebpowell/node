@@ -10,6 +10,17 @@ html
 					a(href = "/vpns") VPNS
 				li
 					a(href = "vpns/new") Create New
+				
+				.float-right
+					if (!user)
+						li
+							a(href="/login") Login
+						li
+							a(href="/register") Register
+					if (user)
+						li You are currently logged in as #{user.username}
+						li
+							a(href="/logout") Logout
 
 				
 		block content
